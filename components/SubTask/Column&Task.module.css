@@ -1,0 +1,24 @@
+.subtask {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.subtask-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #635fc7;
+  cursor: pointer;
+}
+
+.subtask-text {
+  color: #828fa3;
+  font-size: 13px;
+  margin: 0;
+}
+
+.subtask-text.checked {
+  text-decoration: line-through;
+  color: #999999;
+}

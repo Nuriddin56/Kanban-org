@@ -1,0 +1,149 @@
+.dropdown-container {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: -100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 24px 55px;
+  z-index: 10;
+}
+
+.dropdown-modal {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(54, 78, 126, 0.25);
+  border-radius: 8px;
+  padding: 16px 0;
+  color: #828fa3;
+}
+
+.dark .dropdown-modal {
+  background: #2b2c37;
+}
+
+.dropdown-modal h3 {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.4px;
+  margin: 0 0 24px 19px;
+}
+
+.dropdown-boards {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-board {
+  padding: 15px 24px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-board:hover {
+  background: rgba(99, 95, 199, 0.1);
+  color: #635fc7;
+  border-radius: 0px 100px 100px 0px;
+}
+
+.dark .dropdown-board:hover {
+  background: white;
+  color: #635fc7;
+}
+
+.board-active {
+  background-color: #635fc7;
+  border-radius: 0px 100px 100px 0px;
+  color: white;
+}
+
+.dropdown-board img {
+  margin-right: 12px;
+}
+
+.dropdown-create-board-btn {
+  color: #635fc7;
+  fill: #635fc7;
+}
+
+.filter-purple {
+  filter: invert(39%) sepia(47%) saturate(748%) hue-rotate(203deg)
+    brightness(94%) contrast(93%);
+}
+
+.filter-white {
+  filter: invert(100%) sepia(96%) saturate(16%) hue-rotate(350deg)
+    brightness(104%) contrast(100%);
+}
+
+.theme-toggle {
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 16px 16px 0 16px;
+  background: #f4f7fd;
+  border-radius: 6px;
+}
+
+.dark .theme-toggle {
+  background: #20212c;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin: 0;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #635fc7;
+  transition: 0.4s;
+}
+
+.slider:hover {
+  background: #a8a4ff;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

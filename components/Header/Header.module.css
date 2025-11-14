@@ -1,0 +1,86 @@
+.header-container {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  background-color: white;
+  position: relative;
+}
+
+.dark header {
+  background: #2b2c37;
+}
+
+.header-name-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: auto;
+  margin-left: 16px;
+}
+
+.header-name-container img {
+  cursor: pointer;
+}
+
+.add-task-btn {
+  margin-right: 16px;
+  background: #635fc7;
+  color: white;
+  border-radius: 24px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-task-btn:hover {
+  background: #a8a4ff;
+}
+
+.btn-off {
+  opacity: 0.25;
+  cursor: initial;
+}
+
+.elipsis {
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media only screen and (min-width: 768px) {
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: calc(261px - 16px);
+    padding-left: 10px;
+  }
+
+  .logo-text {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .header-name-container {
+    margin-left: 24px;
+  }
+
+  .add-task-btn {
+    width: 164px;
+    height: 48px;
+    margin-right: 24px;
+  }
+
+  .elipsis {
+    height: 20px;
+    width: 5px;
+  }
+}
