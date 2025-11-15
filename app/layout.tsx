@@ -6,7 +6,6 @@ export const metadata = {
   description: "Kanban board",
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -20,3 +19,4 @@ export default function RootLayout({
     </html>
   );
 }
+// My Kanban App

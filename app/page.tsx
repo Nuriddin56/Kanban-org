@@ -11,7 +11,6 @@ export default function Page() {
 
   const activeBoard = boards.find((board: any) => board.isActive);
 
-  
   return (
     <div className={`app ${theme}`}>
       {boards.length > 0 ? (
